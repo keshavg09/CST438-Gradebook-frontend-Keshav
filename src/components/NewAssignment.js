@@ -14,13 +14,13 @@ class NewAssignment extends React.Component {
     };
 
     handleChange = (event) => {
-        if (event.target.name == "name"){
+        if (event.target.name === "name"){
             this.setState({assignName: event.target.value});
         }
-        else if (event.target.name == "date"){
+        else if (event.target.name === "date"){
             this.setState({dueDate: event.target.value});
         }
-        else if (event.target.name == "courseid"){
+        else if (event.target.name === "courseid"){
             this.setState({courseId: event.target.value});
         }
     }
